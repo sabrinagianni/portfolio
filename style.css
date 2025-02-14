@@ -1,0 +1,205 @@
+h1 {
+    font-family: Georgia;
+    color: rgb(190, 152, 176);
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ffd1dc;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.navigation a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navigation a.active {
+    background-color: #ffd1dc;
+    color: rgb(0, 0, 0);
+}
+
+.navigation a:hover:not(.active) {
+    background-color: rgb(183, 216, 243);
+    color: rgb(255, 255, 255);
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    .navigation {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navigation a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navigation a {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pdf {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: #a7c7e7
+}
+
+h1 {
+    margin: auto;
+    width: 26%;
+    padding: 100px 5px 90px 90px;
+}
+
+.intro {
+    margin: auto;
+    width: 60%;
+    padding: 100px 5px 90px 90px;
+}
+
+.contact {
+    margin: auto;
+    width: 60%;
+    padding: 300px 500px 500px 500px;
+    font-size: 50px;
+}
+
+mark {
+    background-color: #779ecb;
+    color: #ffffff;
+}
+
+.project {
+    margin: auto;
+    width: 60%;
+    padding: 20px 5px 90px 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #fcfcfc;
+}
+
+@media screen and (max-width: 400px) {
+    .project {
+        align-items: flex-start;
+        text-align: left;
+        padding-right: 5px;
+        float: none;
+        margin: 0 auto;
+        ;
+    }
+}
+
+.about {
+    margin: auto;
+    width: 60%;
+    padding: 20px 5px 90px 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.linkedin {
+    margin: auto;
+    width: 60%;
+    padding: 0px 100px 100px 200px;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.github {
+    margin: auto;
+    width: 60%;
+    padding: 0px 100px 100px 200px;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mail {
+    margin: auto;
+    width: 60%;
+    padding: 0px 100px 100px 200px;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.linkedinicon {
+    font-size: 40px;
+}
+
+.githubicon {
+    font-size: 40px;
+}
+
+.mailicon {
+    font-size: 40px;
+}
+
+.my-photo {
+    width: 70%
+}
+
+@media screen and (max-width: 700px) {
+    .connect-me {
+        align-items: flex-start;
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.proj-photo {
+    width: 50%;
+}
+
+a:link,
+a:visited {
+    color: white;
+}

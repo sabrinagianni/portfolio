@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sabrina Pukarta">
+    <meta name="description" content="My Resume">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Resume</title>
+    <style>
+        .pdf-embed {
+            display: block;
+        }
+
+        .pdf-link {
+            display: none;
+            display: flex;
+            justify-content: center;
+            padding-left: 10%;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        @media (max-width: 1400px) {
+            .pdf-embed {
+                display: none;
+            }
+
+            .pdf-link {
+                display: flex;
+            }
+
+            @media screen and (max-width: 1000px) {
+                .navigation {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+
+                .navigation a {
+                    float: left;
+                }
+
+                div.content {
+                    margin-left: 0;
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                .navigation a {
+                    text-align: center;
+                    float: none;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="index.html"> Home </a>
+        <a href="about.html"> About </a>
+        <a href="resume.html"> Resume </a>
+        <a href="projects.html"> Projects </a>
+        <a href="contact.html"> Contact </a>
+    </div>
+
+    <div class="pdf-embed">
+        <iframe src="Sabrina_Pukarta.pdf" style="width: 90%; height: 1000px; padding-left: 5cm;"
+            title="Resume of Sabrina Pukarta"></iframe>
+    </div>
+
+    <div class="pdf-link">
+        <p>If your browser does not support embedded PDFs. You can <a href="Sabrina_Pukarta.pdf" download>download the
+                resume here</a></p>
+    </div>
+</body>
+
+</html>
